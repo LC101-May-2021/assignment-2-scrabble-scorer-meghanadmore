@@ -68,7 +68,16 @@ let vowelBonusScore=function(word) {
 
 }
 
-let scrabbleScore=oldScrabbleScorer("word");
+let scrabbleScore=function(word){
+  word=word.tolowerCase();
+  let alphabets;
+  let sum=0;
+  for(i=0;i<word.length;i++){
+    alphabets=word[i];
+    sum+=newpointStructure[alphabets];
+  }
+  return sum;
+}
 
 const scoringAlgorithms = [{
           name:"Simple Score",

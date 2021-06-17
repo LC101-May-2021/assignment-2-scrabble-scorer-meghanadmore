@@ -74,7 +74,7 @@ let scrabbleScore=function(word){
   let sum=0;
   for(i=0;i<word.length;i++){
     alphabets=word[i];
-    sum+=newpointStructure[alphabets];
+    sum+=newPointStructure[alphabets];
   }
   return sum;
 }

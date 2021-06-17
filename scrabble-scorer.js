@@ -69,7 +69,7 @@ let vowelBonusScore=function(word) {
 }
 
 let scrabbleScore=function(word){
-  word=word.tolowerCase();
+  word=word.toLowerCase();
   let alphabets;
   let sum=0;
   for(i=0;i<word.length;i++){
